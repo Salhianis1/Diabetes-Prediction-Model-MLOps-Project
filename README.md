@@ -39,7 +39,7 @@ We use a Random Forest Classifier trained on the **Pima Indians Diabetes Dataset
 
 ```bash
 git clone https://github.com/Salhianis1/Diabetes-Prediction-Model-MLOps-Project.git
-cd first-mlops-project
+cd Diabetes-Prediction-Model-MLOps-Project
 ```
 
 ### 2. Create Virtual Environment
