@@ -10,15 +10,24 @@ This project helps you learn **Building and Deploying an ML Model** using a simp
 - ✅ Kubernetes Deployment
 
 ---
+# 📊 Problem Statement
 
-## 📊 Problem Statement
+Diabetes is one of the most common chronic diseases worldwide, and early detection plays a key role in preventing severe complications.  
+The challenge is to create a system that can **predict whether a person is likely to have diabetes** using simple health indicators.
 
-Predict if a person is diabetic based on:
-- Pregnancies
-- Glucose
-- Blood Pressure
-- BMI
-- Age
+## 🔑 Input Features
+- **Pregnancies** – Number of times the person has been pregnant  
+- **Glucose** – Blood sugar level  
+- **Blood Pressure** – Blood pressure value  
+- **BMI** – Body Mass Index (weight in relation to height)  
+- **Age** – Age of the individual  
+
+## 🤖 Machine Learning Approach
+We use a **Random Forest Classifier** trained on the well-known **Pima Indians Diabetes Dataset**.  
+The model learns patterns that distinguish diabetic from non-diabetic individuals and can then be used to make predictions for new patients.
+
+## 🎯 Goal
+The aim of this project is to **provide a practical machine learning solution** that can help in risk assessment and raise awareness about diabetes in an accessible and user-friendly way.
 
 We use a Random Forest Classifier trained on the **Pima Indians Diabetes Dataset**.
 
@@ -29,7 +38,7 @@ We use a Random Forest Classifier trained on the **Pima Indians Diabetes Dataset
 ### 1. Clone the Repo
 
 ```bash
-git clone https://github.com/iam-veeramalla/first-mlops-project.git
+git clone https://github.com/Salhianis1/Diabetes-Prediction-Model-MLOps-Project.git
 cd first-mlops-project
 ```
 
@@ -62,11 +71,11 @@ uvicorn main:app --reload
 
 ```
 {
-  "Pregnancies": 2,
-  "Glucose": 130,
-  "BloodPressure": 70,
-  "BMI": 28.5,
-  "Age": 45
+  "Pregnancies": 3,
+  "Glucose": 90,
+  "BloodPressure": 62,
+  "BMI": 26,
+  "Age": 30
 }
 ```
 
